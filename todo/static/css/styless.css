@@ -1,0 +1,6 @@
+
+.main{background:red;display:flex;align-items:center;justify-content:center;align-items:center;}
+.tables{border:3px solid green;}
+.tables tr{border:2px solid yellow;}
+.tables tr td{border:2px solid yellow;}
+.formss{display:flex;justify-content:center;align-items:center;text-align:center;background:yellow;}

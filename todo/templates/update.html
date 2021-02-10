@@ -1,0 +1,15 @@
+{% load static %}
+<html lang="en">
+<head>
+     <link rel="stylesheet" a href="{% static 'css/styles.css' %}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST" >
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" name="update" class="welcome">
+</form>
+</body>
+</html>

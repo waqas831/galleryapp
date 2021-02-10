@@ -1,0 +1,17 @@
+{% extends 'home.html' %}
+{% block content %}
+<div class="row mt-3">
+        {% for pics in post %}
+        <div class="col-sm-4">
+            <div class="card m-2">
+                <img src="{{pics.pic.url}}" alt="" class="card-img-top" height="250px">
+                <div class="side">
+                    <div class="hello"><small>{{pics.dated}}</small></div>
+                    <div class="never">{{pics.desc}}</div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

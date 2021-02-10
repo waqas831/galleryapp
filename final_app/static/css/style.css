@@ -1,0 +1,7 @@
+h1{color:blue;font-size:26px;font-style:italic;font-family:potta One;text-transform:capitalize;
+text-shadow:0px 6px 6px rgba(0,122,23,0.7);}
+#myform{background-image:linear-gradient(90deg,red,green,yellow);font-family:potta One;}
+.side{display:flex;}
+.hello{position:absolute;right:0px;color:red;font-family:potta One;}
+.never{float:right;color:blue;font-family:potta One;}
+.fontss{font-size:45px;text-align:center;text-decoration:underline;}

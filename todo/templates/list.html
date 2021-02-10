@@ -1,0 +1,40 @@
+{% load static %}
+<html lang="en">
+<head>
+  <link rel="stylesheet" a href="{% static 'css/styless.css' %}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hello world welcome</h1>
+<form method="POST" action="" class="formss">
+    {% csrf_token %}
+    {{form}}
+    <div>
+        <br>
+    <input type="submit" value="submit" name="success">
+    </div>
+</form>
+<div class="main">
+    <table class="tables">
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>desc</th>
+            <th>dates</th>
+            <th>catagory</th>
+        </tr>
+        {% for display in data %}
+        <tr>
+        <td>{{display.id}}</td>
+        <td>{{display.title}}</td>
+         <td>{{display.desc}}</td>
+         <td>{{display.date_s}}</td>
+        <td>{{display.catagory}}</td>
+         <td><a href="{% url 'update' display.id %}">update</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>
